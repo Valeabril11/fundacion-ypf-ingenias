@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- hoja de estilo -->
+    <link rel="stylesheet" href="./css/styles.css">
+    <!-- bootstrap cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100;0,300;0,400;0,700;1,100;1,400&display=swap"
+        rel="stylesheet">
+    <!-- script js para el nav -bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+        crossorigin="anonymous"></script>
+    <title>Huellitas</title>
+</head>
+
+<body class="fondoPatitas">
+    <header>
+        <!-- la clase menu separan con space-between el logo del menu -->
+        <!-- <nav class="menu">
+            <a href="./index.html"><img src="./img/logo2.jpeg" alt="logo Huellitas" class="imgLogo"></a>
+            <ul class="menuOpciones">
+                <li><a href="./index.html" class="active"> Home </a></li>
+                <li class="dropdown">
+                    <a href="./pages/adopcion.html" class="dropbtn"> Adopción </a>
+
+                    <div class="dropdown-content">
+                        <a a href="./pages/perritos.html">Perritos</a>
+                        <a a href="./pages/gatitos.html">Gatitos</a>
+                    </div>
+                </li>
+
+                <li><a href="./pages/donacion.html"> Donaciones </a></li>
+                <li><a href="./pages/castraciones.html"> Castraciones </a></li>
+                <li><a href="./pages/transito.html"> Tránsito </a></li>
+            </ul>
+        </nav> -->
+
+        <nav class="navbar navbar-expand-lg bgNav">
+            <div class="container-fluid">
+                <a class="navbar-brand mx-2" href="./index.html"><img src="./img/logo2.jpeg" alt="logo Huellitas"
+                        class="imgLogo"></a>
+                <button class="navbar-toggler mx-2" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item mx-2">
+                            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown mx-2">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Adopciones
+                            </a>
+                            <ul class="dropdown-menu mx-2">
+                                <li><a class="dropdown-item" href="./pages/adopcion.html">Adoptar salva vidas!</a></li>
+                                <li><a class="dropdown-item" href="./pages/perritos.html">Perritos</a></li>
+                                <li><a class="dropdown-item" href="./pages/gatitos.html">Gatitos</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="./pages/castraciones.html">Castraciones</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="./pages/donacion.html">Donaciones</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="./pages/transito.html">Tránsito</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1 class="textCenter"> Huellitas </h1>
+            <h2 class="tituloSecundario"> En este grupo nos gustan los animales! Nos dedicamos al rescate, cuidado y
+                posterior
+                adopción de nuestros
+                amiguitos. </h2>
+
+
+            <section>
+                <div class="containerEnlaces">
+                    <div class="enlaceImagen">
+                        <h3 class="textMayus"> Adoptar </h3>
+                        <div class="containerImg">
+                            <a href="./pages/adopcion.html"> <img src="./img/adoptar.jpg" class="imgSize "
+                                    alt="Adoptar">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="enlaceImagen">
+                        <h3 class="textMayus"> Donar </h3>
+                        <div class="containerImg">
+                            <a href="./pages/donacion.html"><img src="./img/perro-comida.jpg" class="imgSize "
+                                    alt="Donaciones"></a>
+
+                        </div>
+                    </div>
+
+                    <div class="enlaceImagen">
+                        <h3 class="textMayus"> Castrar </h3>
+                        <div class="containerImg">
+                            <a href="./pages/castraciones.html"><img src="./img/castraciones.jpg" class="imgSize "
+                                    alt="Castración"></a>
+
+                        </div>
+                    </div>
+                    <div class="enlaceImagen">
+                        <h3 class="textMayus"> Tránsito </h3>
+                        <div class="containerImg">
+                            <a href="./pages/transito.html"><img src="./img/transito.jpg" class="imgSize "
+                                    alt="Tránsito"></a>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+        </div>
+        <div class="bannerHome">
+            <p class="parrafo">
+                Recordá que una mascota es un ser vivo, no un juguete. Seamos
+                responsables
+            </p>
+        </div>
+
+        <article class="tipsMascotas container">
+            <div class="contexto">
+                <h3>Mascotas en el espacio público</h3>
+                <p class="parrafoGeneral">
+                    Paseá siempre a tu mascota con correa, collar y bozal (en caso de ser agresiva) para evitar que
+                    deambule pobremente y se pierda. También para prevenir que se lastime o lastime a otros.
+                </p>
+                <p class="parrafoGeneral">
+                    Ponele una chapita con su nombre y un número de
+                    teléfono. Así, podrán contactarte en caso de que se pierda.
+                </p>
+                <p class="parrafoGeneral">
+                    Cuando pasees a tu mascota, no olvides llevar siempre una bolsita para levantar su caca,
+                    cerrarla y tirarla al contenedor negro.
+                </p>
+            </div>
+            <div class="imgContexto">
+                <img src="./img/mascota-plaza.jpg" alt="perro en la plaza" class="imgResponsive">
+            </div>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <div class="footerIzquierda">
+            <div class="div1">
+                <a href="./index.html"> Home </a>
+                <a href="./pages/adopcion.html"> Adopción </a>
+                <a href="./pages/donacion.html"> Donaciones </a>
+                <a href="./pages/castraciones.html"> Castraciones </a>
+                <a href="./pages/transito.html"> Tránsito </a>
+            </div>
+            <div class="footerIcon">
+                <!--luego ICONO -->
+                <p>Whatsapp +541112223344</p>
+            </div>
+        </div>
+
+        <div class="footerDerecha">
+            <p>Todos los derechos reservados a Huellitas</p>
+            <p>2022</p>
+        </div>
+    </footer>
+</body>
+
+</html>
