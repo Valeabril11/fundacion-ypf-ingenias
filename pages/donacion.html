@@ -33,7 +33,7 @@
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item mx-2">
-                            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                            <a class="nav-link" aria-current="page" href="../index.html">Home</a>
                         </li>
                         <li class="nav-item dropdown mx-2">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -50,7 +50,7 @@
                             <a class="nav-link" href="./castraciones.html">Castraciones</a>
                         </li>
                         <li class="nav-item mx-2">
-                            <a class="nav-link" href="./donacion.html">Donaciones</a>
+                            <a class="nav-link active" href="./donacion.html">Donaciones</a>
                         </li>
                         <li class="nav-item mx-2">
                             <a class="nav-link" href="./transito.html">Tránsito</a>
@@ -62,55 +62,56 @@
     </header>
 
     <main>
-        <div class="container">
+        <div class="container my-5">
             <h1 class="textCenter"> Donaciones </h1>
             <h2 class="tituloSecundario"> ¿Querés ayudarnos? </h2>
-        </div>
-        <section class="container">
-            <div class="imageContainer">
-                <p class="textSecundario"> Necesitamos tu apoyo para solventar los gastos de nuestros animalitos
-                </p>
-                <!-- la clase containerImg tiene la modificaicon para la MQ -->
-                <div class="containerImg">
-                    <img src="../img/donacion.jpg" class="imgSize" alt="Donacion">
+
+            <section class="container">
+                <div class="imageContainer">
+                    <p class="textSecundario"> Necesitamos tu apoyo para solventar los gastos de nuestros animalitos
+                    </p>
+                    <!-- la clase containerImg tiene la modificaicon para la MQ -->
+                    <div class="containerImg">
+                        <img src="../img/donacion.jpg" class="imgSize" alt="Donacion">
+                    </div>
+                    <p class="textSecundario"> Nuestro objetivo es seguir ayudando a encontrar hogares para nuestros
+                        rescatados y tambien brindar un hogar digno a los que no tienen la suerte de ser adoptados.</p>
+                    <p class="textSecundario"> Seria imposible sin tu ayuda, te agradecemos tu colaboración. </p>
                 </div>
-                <p class="textSecundario"> Nuestro objetivo es seguir ayudando a encontrar hogares para nuestros
-                    rescatados y tambien brindar un hogar digno a los que no tienen la suerte de ser adoptados.</p>
-                <p class="textSecundario"> Seria imposible sin tu ayuda, te agradecemos tu colaboración. </p>
+
+                <article>
+                    <p class="parrafo"> Todo lo donado sera para: </p>
+                    <ul>
+                        <li> Alimentos </li>
+                        <li> Medicamentos </li>
+                        <li> Insumos </li>
+                        <li> Cuchas </li>
+                        <li> Transito </li>
+                    </ul>
+
+                </article>
+            </section>
+
+            <div class="containerValores">
+                <form>
+                    <fieldset class="formDonacion">
+                        <p class="textCenter"> Vos podes ayudarnos </p>
+                        <select name="dinero" id="dinero">
+                            <option value="100$"> 100$ </option>
+                            <option value="200$"> 200$ </option>
+                            <option value="300$"> 300$ </option>
+                            <option value="400$"> 400$ </option>
+                            <option value="500$"> 500$ </option>
+                            <option value="600$"> 600$ </option>
+                            <option value="700$"> 700$ </option>
+                            <option value="800$"> 800$ </option>
+                            <option value="900$"> 900$ </option>
+                            <option value="1000$"> 1000$ </option>
+                        </select>
+                        <input type="submit" value="Donar" />
+                    </fieldset>
+                </form>
             </div>
-
-            <article>
-                <p class="parrafo"> Todo lo donado sera para: </p>
-                <ul>
-                    <li> Alimentos </li>
-                    <li> Medicamentos </li>
-                    <li> Insumos </li>
-                    <li> Cuchas </li>
-                    <li> Transito </li>
-                </ul>
-
-            </article>
-        </section>
-
-        <div class="containerValores">
-            <form>
-                <fieldset class="formDonacion">
-                    <p class="textCenter"> Vos podes ayudarnos </p>
-                    <select name="dinero" id="dinero">
-                        <option value="100$"> 100$ </option>
-                        <option value="200$"> 200$ </option>
-                        <option value="300$"> 300$ </option>
-                        <option value="400$"> 400$ </option>
-                        <option value="500$"> 500$ </option>
-                        <option value="600$"> 600$ </option>
-                        <option value="700$"> 700$ </option>
-                        <option value="800$"> 800$ </option>
-                        <option value="900$"> 900$ </option>
-                        <option value="1000$"> 1000$ </option>
-                    </select>
-                    <input type="submit" value="Donar" />
-                </fieldset>
-            </form>
         </div>
     </main>
 

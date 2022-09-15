@@ -28,61 +28,6 @@
 
 /*-------------------MENU INICIO----------------------*/
 
-.menu {
-  /* nav -> logo + menu */
-  display: flex;
-  justify-content: space-between;
-  padding: 5px;
-  align-items: center;
-  background-color: #a760ff;
-}
-.menu a:hover {
-  color: #ffcc8f;
-}
-/* display: por defecto es row */
-.menuOpciones {
-  /* menu lista */
-  list-style: none;
-  display: flex;
-}
-
-/*--- DROPDOWN---- */
-li a,
-.dropbtn {
-  display: inline-block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-  font-weight: 300;
-}
-
-.dropdown-content a:hover {
-  background-color: #f1f1f1;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-/*----- DROPDOWN FIN ----*/
-
 /* realizo la clase active para que quede activo la seccion del menu donde me encuentro parado */
 /* si coloco a:active -> este active es cuando mantengo apretado el click.. */
 .active {
@@ -96,8 +41,8 @@ li a,
   border-bottom: 1px solid #fcd29f88;
   box-shadow: 0 0 1px 1px rgba(203, 130, 255, 0.568);
 }
-
 /*----------------------MENU FIN-----------------------*/
+
 h1 {
   color: #a760ff;
   margin: 10px;
@@ -116,11 +61,6 @@ h3 {
 
 .parrafoGeneral {
   padding: 15px;
-}
-
-.container {
-  padding: 1rem;
-  margin: 1rem;
 }
 
 /* HOME */
@@ -152,13 +92,16 @@ h3 {
 .containerEnlaces {
   display: flex;
   flex-direction: row;
+  align-items: center;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  margin: 30px 0;
 }
 
 .enlaceImagen {
   display: flex;
   flex-direction: column-reverse;
+  gap: 20px;
   align-items: center;
   margin: 10px;
 }
@@ -166,12 +109,13 @@ h3 {
 .bannerHome {
   background-image: url("../img/mascotas-responsables.jpg");
   background-position: center;
-  height: 50vh;
   width: 100%;
-  margin: 10px 0;
+  height: 300px;
+  margin: 20px 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  opacity: 0.8;
 }
 .bannerHome p {
   font-size: 2.2em;
@@ -189,13 +133,14 @@ h3 {
   justify-content: space-around;
   align-items: center;
   background-color: #ffcd8f83;
+  padding: 10px;
 }
 
 .contexto {
   max-width: 700px;
-  padding: 10px 0;
 }
 
+/* ----- FOOTER -----*/
 .footer {
   background-color: #ffcc8f;
   height: auto;
@@ -224,6 +169,11 @@ h3 {
 
 .footerIcon {
   padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 
 /* -------------------ADOPCION -gato perro INICIO----------------------------- */
@@ -248,7 +198,7 @@ h3 {
 
 /* ------------------- ADOPCION FIN --------------------------- */
 
-/*-------------------- DONACION --------------------------------*/
+/*-------------------- DONACION INICIO --------------------------------*/
 
 .textCenter {
   text-align: center;
@@ -490,10 +440,6 @@ ol li {
   }
 
   /* ADOPCION */
-  .parrafoGeneral {
-    font-size: larger;
-  }
-
   .imgAdopciones {
     width: 350px;
     height: 250px;
