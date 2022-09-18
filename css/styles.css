@@ -314,44 +314,170 @@ ol li {
 .textSecundario {
   text-align: center;
   padding: 20px;
-  font-size: 18px;
+  color: #b971ed;
 }
 
-.containerTransito {
+.muestras {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  /*background-color: #e9e2ef;*/
+  padding: 25px;
+}
+
+.fotos {
+  box-shadow: 0px 10px 10px -6px blueviolet;
+  border: 5px solid rgba(220, 114, 221, 0.952);
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.fotos .imagen {
+  border-radius: 15px;
+  height: 250px;
+  background-size: cover;
+  background-position-x: center;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+.img1 {
+  background-image: url("https://cdn.pixabay.com/photo/2015/02/21/10/39/dog-644111_960_720.jpg");
+}
+
+.img2 {
+  background-image: url("https://cdn.pixabay.com/photo/2021/11/26/02/39/dog-6824999_960_720.jpg");
+}
+
+.img3 {
+  background-image: url("https://cdn.pixabay.com/photo/2020/12/21/08/36/dog-5849152_960_720.jpg");
+}
+
+.img4 {
+  background-image: url("https://cdn.pixabay.com/photo/2019/02/06/15/18/puppy-3979350_960_720.jpg");
+}
+
+.img5 {
+  background-image: url("https://cdn.pixabay.com/photo/2019/04/08/20/38/animal-4112950_960_720.jpg");
+}
+
+.img6 {
+  background-image: url("https://cdn.pixabay.com/photo/2013/09/03/23/30/animals-178808_960_720.jpg");
+}
+
+.img7 {
+  background-image: url("https://cdn.pixabay.com/photo/2014/11/30/14/11/cat-551554_960_720.jpg");
+}
+
+.img8 {
+  background-image: url("https://cdn.pixabay.com/photo/2017/08/23/08/33/cats-eyes-2671903_960_720.jpg");
+}
+
+.img9 {
+  background-image: url("https://cdn.pixabay.com/photo/2014/06/03/01/31/cat-360807_960_720.jpg");
+}
+
+.fotos {
+  width: 25%;
+}
+
+.nombre {
+  color: blue;
+  text-align: center;
+  font-size: x-large;
+  font-weight: bolder;
+  margin: 10px 10px;
+}
+
+.descripcion {
+  color: black;
+  font-size: smaller;
+  text-align: center;
+  margin: 10px 10px;
+}
+
+.titulo {
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+  color: #9a35e2;
+  font-size: x-large;
+  text-align: center;
+  font-family: "Albert Sans", sans-serif;
+}
+
+.transitar .parrafo {
+  background-color: #f6e7f2;
+  font-size: x-large;
+  animation-duration: 6s;
+  animation-name: slidein;
+  text-align: center;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+.formulario {
+  text-align: center;
+  color: darkviolet;
+  font-size: medium;
+  /*display: flex;
+  flex-wrap: wrap;
+  justify-content: center;*/
+}
+
+.publicidad {
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 25px 0;
+  padding: 15px;
+  gap: 4px;
   width: 100%;
-  margin: 10px 0;
 }
 
-.galeria-container {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  grid-auto-rows: 250px;
-  padding: 20px;
-  grid-gap: 20px;
-  grid-column-gap: 10px;
-  grid-row-gap: 10px;
-  background-color: #dcc5ec;
-  margin-left: 10%;
-  margin-right: 10%;
+.imagePublicidad {
+  width: 40%;
 }
 
-.galeria__item {
+.textPublicidad {
+  background-color: #f6e7f2;
+  padding: 8px;
+  color: #b971ed;
+  text-align: left;
   width: 100%;
-  object-fit: cover;
 }
 
-.imgTransito {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.tituloPubli {
+  font-size: large;
+  color: #b224b7;
+  text-align: center;
 }
 
-.galeria-container .galeria__item:nth-child(7) {
-  grid-row-start: span 2;
-}
-
-.galeria-container .galeria__item:nth-child(8) {
-  grid-column-start: span 2;
+.textPublicidad button {
+  background: transparent;
+  border: 2px solid white;
+  padding: 5px;
+  color: #c447b1;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
 }
 
 /*--------------- TRANSITO FIN ------------------------*/
@@ -391,20 +517,14 @@ ol li {
   }
 
   /* TRANSITO */
-  .galeria-container {
-    width: 100vh;
-    grid-template-columns: repeat(2);
-    grid-gap: 10px;
-    grid-template-rows: 200px;
+  .publicidad {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
-  .galeria-container .galeria__item:nth-child(7) {
-    grid-column-start: span 1;
-  }
-  .galeria-container .galeria__item:nth-child(8) {
-    grid-column-start: span 1;
-  }
-  .imgTransito {
-    object-fit: cover;
+
+  .imagePublicidad {
+    width: 100%;
   }
 
   /* FOOTER */
@@ -465,17 +585,13 @@ ol li {
   }
 
   /* TRANSITO */
-  .galeria-container {
-    width: 100vh;
-    grid-template-columns: repeat(1, 1fr);
-    margin: 0px;
+  .muestras {
     flex-direction: column;
-    margin: 0px;
-    object-fit: cover;
+    justify-content: center;
   }
-  .galeria-container .galeria__item {
-    height: 100%;
-    object-fit: cover;
+
+  .fotos {
+    width: 100%;
   }
 
   /* FOOTER */
