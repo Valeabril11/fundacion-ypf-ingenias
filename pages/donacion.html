@@ -63,7 +63,7 @@
         </nav>
     </header>
 
-    <main>
+    <!-- <main>
         <div class="container my-5">
             <h1 class="textCenter"> Donaciones </h1>
             <h2 class="tituloSecundario"> ¿Querés ayudarnos? </h2>
@@ -72,7 +72,6 @@
                 <div class="imageContainer">
                     <p class="textSecundario"> Necesitamos tu apoyo para solventar los gastos de nuestros animalitos
                     </p>
-                    <!-- la clase containerImg tiene la modificaicon para la MQ -->
                     <div class="containerImg">
                         <img src="../img/donacion.jpg" class="imgSize" alt="Donacion">
                     </div>
@@ -98,6 +97,58 @@
                 <form>
                     <fieldset class="formDonacion">
                         <p class="textCenter"> Vos podes ayudarnos </p>
+                        <select name="dinero" id="dinero">
+                            <option value="100$"> 100$ </option>
+                            <option value="200$"> 200$ </option>
+                            <option value="300$"> 300$ </option>
+                            <option value="400$"> 400$ </option>
+                            <option value="500$"> 500$ </option>
+                            <option value="600$"> 600$ </option>
+                            <option value="700$"> 700$ </option>
+                            <option value="800$"> 800$ </option>
+                            <option value="900$"> 900$ </option>
+                            <option value="1000$"> 1000$ </option>
+                        </select>
+                        <input type="submit" value="Donar" />
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </main> -->
+    <main>
+        <div class="container my-5">
+            <h1 class="textCenter"> Donaciones </h1>
+            <h2 class="tituloSecundario"> ¿Querés ayudarnos? </h2>
+            <section>
+                <div class="container1">
+                    <p class="textSecundario"> Necesitamos tu apoyo para solventar los gastos de nuestros animalitos
+                    </p>
+                    <p class="textSecundario"> Nuestro objetivo es seguir ayudando a encontrar hogares para nuestros
+                        rescatados y tambien brindar un hogar digno a los que no tienen la suerte de ser adoptados.
+                        Seria imposible sin tu ayuda, te agradecemos tu colaboración. </p>
+                    <img src="../img/donacion.jpg" class="imgSizeDonacion" alt="Donacion">
+                </div>
+
+                <div class="container2">
+                    <p class="parrafoGeneral"> Todo lo donado sera para: </p>
+                    <ul class="parrafoSec">
+                        <li> Alimentos </li>
+                        <li> Medicamentos </li>
+                        <li> Insumos </li>
+                        <li> Cuchas </li>
+                        <li> Transito </li>
+                        <li> Gastos Veterinarios</li>
+                    </ul>
+                </div>
+            </section>
+
+            <div class="containerValores">
+                <form>
+                    <fieldset class="form1">
+                        <p> Vos podes ayudarnos con tu colaboración </p>
+                        <label for="nombre"> Nombre:</label>
+                        <input type="text" name="nombre" id="nombre">
+                        <p> Seleccione la cantidad y pulse sobre "Donar" </p>
                         <select name="dinero" id="dinero">
                             <option value="100$"> 100$ </option>
                             <option value="200$"> 200$ </option>

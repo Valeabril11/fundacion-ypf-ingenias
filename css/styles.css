@@ -120,9 +120,12 @@ h3 {
 .bannerHome p {
   font-size: 2.2em;
   font-weight: 700;
+  font-style: italic;
   text-shadow: 2px 2px #000000;
+  color: #ca82ff;
   padding: 30px;
 }
+
 /*-- IMAGEN FIN---*/
 
 /* tipsmascotas */
@@ -197,38 +200,6 @@ h3 {
 }
 
 /* ------------------- ADOPCION FIN --------------------------- */
-
-/*-------------------- DONACION INICIO --------------------------------*/
-
-.textCenter {
-  text-align: center;
-}
-
-.tituloSecundario {
-  color: #ca82ff;
-  text-align: center;
-}
-
-.parrafo {
-  font-weight: 500;
-  font-size: 1.875em;
-  font-style: italic;
-  padding: 10px;
-  color: #ca82ff;
-}
-
-.containerValores {
-  margin: 20px 0px;
-  padding: 20px;
-}
-
-.formDonacion {
-  text-align: center;
-  padding: 40px;
-  background-color: #dcc5ec;
-}
-
-/*-------------------- DONACION FIN ------------------------------*/
 
 /*-------------------- CASTRACIONES INICIO------------------------*/
 
@@ -308,8 +279,81 @@ ol li {
 }
 
 /*-------------------- CASTRACIONES FIN------------------------*/
+/*-------------------- DONACION INICIO --------------------------------*/
+.textCenter {
+  text-align: center;
+}
+.tituloSecundario {
+  color: #ca82ff;
+  text-align: center;
+}
+
+.container1 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-size: 20px;
+}
+
+.imgSizeDonacion {
+  margin: auto;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 2px dotted;
+}
+
+.container2 {
+  font-weight: 500;
+  font-size: 2rem;
+  font-style: italic;
+  padding: 30px;
+  color: #9510f4;
+}
+
+.parrafoSec {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  color: black;
+  font-size: 20px;
+}
+
+.containerValores {
+  margin: 20px 0px;
+  padding: 40px;
+}
+
+.form1 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 70px;
+  margin-left: 50px;
+}
+
+.form1 p {
+  font-size: 25px;
+}
+
+.form1 input {
+  background-color: #eac3cc;
+  border-radius: 10px;
+  padding: 3px;
+  margin: 6px;
+}
+
+/*-------------------- DONACION FIN ------------------------------*/
 
 /*-------------- TRANSITO INICIO ----------------------------------------*/
+
+.parrafo {
+  font-weight: 500;
+  font-size: 1.875em;
+  font-style: italic;
+  padding: 10px;
+  color: #ca82ff;
+}
 
 .textSecundario {
   text-align: center;
@@ -516,6 +560,13 @@ ol li {
     font-size: large;
   }
 
+  /* DONACION */
+  .parrafoSec {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    font-size: 18px;
+  }
+
   /* TRANSITO */
   .publicidad {
     flex-direction: column;
@@ -582,6 +633,19 @@ ol li {
 
   .textArea {
     width: 200px;
+  }
+
+  /* DONACION */
+
+  .parrafoSec {
+    grid-template-columns: 1fr;
+    text-align: center;
+    list-style-type: none;
+  }
+
+  .imgSizeDonacion {
+    width: 180px;
+    height: 180px;
   }
 
   /* TRANSITO */
