@@ -189,6 +189,12 @@ h3 {
   font-weight: 700;
 }
 
+.divImgAdoptar {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
 .imgAdopciones {
   width: 350px;
   height: 250px;
@@ -691,7 +697,9 @@ ol li {
 
 @media screen and (max-width: 767px) {
   /* ADOPCION */
-
+  .divImgAdoptar {
+    flex-direction: column;
+  }
   .imgAdopciones {
     width: 350px;
     height: 250px;
