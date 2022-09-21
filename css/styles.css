@@ -69,6 +69,7 @@ h3 {
   width: 100px;
   border-radius: 50%;
 }
+
 /* img redonda */
 .imgSize {
   width: 250px;
@@ -76,6 +77,7 @@ h3 {
   border-radius: 50%;
   border: 2px dotted;
 }
+
 .imgSize:hover {
   box-shadow: 2px 2px 2px 2px rgba(204, 146, 21, 0.562);
 }
@@ -105,6 +107,7 @@ h3 {
   align-items: center;
   margin: 10px;
 }
+
 /* imagen "conciencia" a lo ancho de toda la página */
 .bannerHome {
   background-image: url("../img/mascotas-responsables.jpg");
@@ -117,6 +120,7 @@ h3 {
   align-items: center;
   opacity: 0.8;
 }
+
 .bannerHome p {
   font-size: 2.2em;
   font-weight: 700;
@@ -181,6 +185,10 @@ h3 {
 
 /* -------------------ADOPCION -gato perro INICIO----------------------------- */
 
+.textoNegrita {
+  font-weight: 700;
+}
+
 .imgAdopciones {
   width: 350px;
   height: 250px;
@@ -189,14 +197,162 @@ h3 {
 .estilo {
   text-align: center;
 }
-.containerContacto {
-  margin: 20px 0px;
-  padding: 20px;
-}
 
 .form {
   padding: 10px;
-  background-color: #a760ff;
+  background-color: #ab84db;
+}
+
+.inputpadding {
+  padding: 5px;
+}
+
+.flexbox-formadopciones {
+  display: -ms-flex;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.flexbox-formadopciones > div {
+  width: 20%;
+}
+
+.flexbox-formadopciones > div:first-child {
+  margin-right: 50px;
+}
+
+.contenedor {
+  height: 200px;
+  width: 200px;
+  perspective: 1000px;
+  margin: 170px auto;
+  transform: scale(0.9) rotateX(-10deg);
+  transform-style: preserve-3d;
+}
+
+.contenedor .box {
+  animation: rotar 50s infinite linear;
+  height: 100%;
+  width: 100%;
+  transform-style: preserve-3d;
+  transition: 2s;
+}
+
+.elementos {
+  height: 200px;
+  width: 150px;
+  position: absolute;
+  box-shadow: 0 0 10px #fff;
+}
+
+:root {
+  --transladacion: translateZ(250px);
+}
+.elementos:nth-child(1) {
+  transform: rotateY(0deg) var(--transladacion);
+}
+.elementos:nth-child(2) {
+  transform: rotateY(45deg) var(--transladacion);
+}
+.elementos:nth-child(3) {
+  transform: rotateY(90deg) var(--transladacion);
+}
+.elementos:nth-child(4) {
+  transform: rotateY(135deg) var(--transladacion);
+}
+.elementos:nth-child(5) {
+  transform: rotateY(180deg) var(--transladacion);
+}
+.elementos:nth-child(6) {
+  transform: rotateY(225deg) var(--transladacion);
+}
+.elementos:nth-child(7) {
+  transform: rotateY(270deg) var(--transladacion);
+}
+.elementos:nth-child(8) {
+  transform: rotateY(315deg) var(--transladacion);
+}
+.elementos:nth-child(9) {
+  transform: rotateY(360deg) var(--transladacion);
+}
+
+.elementos img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  -webkit-box-reflect: below 10px
+    linear-gradient(transparent, transparent, #0005);
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.elementos img:nth-child(2) {
+  transform: rotateY(180deg);
+}
+
+.imagen2:nth-child(1) {
+  animation: rotar2 50s;
+}
+
+.piso {
+  height: 43em;
+  width: 43em;
+  transform: rotateX(90deg) translateX(-280px) translateY(40px)
+    translateZ(140px);
+  background: -webkit-radial-gradient(
+    center center,
+    farthest-side,
+    #9993,
+    transparent
+  );
+  border-radius: 50%;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.titulo {
+  height: 200px;
+  width: 300px;
+  flex-direction: column;
+  color: #fff;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 1.7em;
+}
+
+.titulo p {
+  margin: 0;
+  padding: 5px;
+}
+
+@keyframes rotar {
+  to {
+    transform: rotateY(-360deg);
+  }
+}
+
+.imagenes {
+  height: 200px;
+  width: 150px;
+  transition: 2s;
+  transform-style: preserve-3d;
+}
+
+.texto-encima {
+  list-style: none;
+  text-align: center;
+  position: absolute;
+  top: -10%;
+  left: 35%;
+  font-weight: bold;
+}
+
+.formularioAdopciones {
+  max-width: 70%;
 }
 
 /* ------------------- ADOPCION FIN --------------------------- */
@@ -231,7 +387,8 @@ ol li {
   border: blueviolet;
   font-size: 20px;
   border-radius: 50px;
-  padding: 10px;
+  padding: 5px 10px;
+  margin: 10px 0;
 }
 
 .botonCast:hover {
@@ -326,10 +483,12 @@ ol li {
 
 .form1 {
   display: flex;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
   padding: 70px;
-  margin-left: 50px;
+
+  text-align: center;
 }
 
 .form1 p {
@@ -366,7 +525,6 @@ ol li {
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
-  /*background-color: #e9e2ef;*/
   padding: 25px;
 }
 
@@ -449,6 +607,7 @@ ol li {
 .titulo {
   padding-top: 30px;
   display: flex;
+  width: 100%;
   justify-content: center;
   color: #9a35e2;
   font-size: x-large;
@@ -531,33 +690,22 @@ ol li {
 -------------------- */
 
 @media screen and (max-width: 767px) {
-  /* HOME */
-  .menu {
-    /* nav -> logo + menu */
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
   /* ADOPCION */
-  .estilo {
-    text-align: start;
-  }
+
   .imgAdopciones {
     width: 350px;
     height: 250px;
     position: relative;
-    left: 20%;
   }
 
-  .containerContacto {
+  .contenedor {
+    height: 200px;
+    width: 200px;
+    perspective: 1000px;
+    margin: 120px auto;
+    transform: scale(0.9) rotateX(-10deg);
+    transform-style: preserve-3d;
     position: relative;
-    left: 15%;
-    font-size: larger;
-  }
-
-  .form {
-    position: relative;
-    font-size: large;
   }
 
   /* DONACION */
@@ -600,33 +748,30 @@ ol li {
     height: 150px;
   }
 
-  .menuOpciones {
-    /* MENU LISTA */
-    display: flex;
-    flex-direction: column;
-  }
-
   .containerEnlaces {
     flex-direction: column;
   }
 
   /* ADOPCION */
-  .imgAdopciones {
-    width: 350px;
-    height: 250px;
-  }
-
-  .containerContacto {
+  .parrafoGeneral {
     font-size: larger;
   }
-  .form {
-    font-size: large;
+
+  .contenedor {
+    height: 200px;
+    width: 200px;
+    perspective: 1000px;
+    margin: 120px auto;
+    transform: scale(0.9) rotateX(-10deg);
+    transform-style: preserve-3d;
+    position: relative;
   }
 
   /* CASTRACION */
   .quieroCastrar {
     flex-direction: column;
   }
+
   ol {
     margin-left: 0;
   }
@@ -636,7 +781,6 @@ ol li {
   }
 
   /* DONACION */
-
   .parrafoSec {
     grid-template-columns: 1fr;
     text-align: center;
