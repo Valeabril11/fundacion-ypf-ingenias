@@ -698,6 +698,16 @@ ol li {
 
 /*--------------- TRANSITO FIN ------------------------*/
 
+/* FORMULARIO */
+.ocultar{
+  display: none;
+}
+.bg-opcion{
+  background-color:   #cb82ff5d ;
+  border-radius: 10px ;
+}
+
+
 /*------------------ 
   MEDIA QUERY TABLET
 -------------------- */
@@ -837,15 +847,6 @@ ol li {
 }
 
 
-.ocultar{
-  display: none;
-}
-.bg-opcion{
-  background-color:   #cb82ff5d ;
-  border-radius: 10px ;
-}
 
-.bg-formContacto{
-  background-color:  #ffdaaf59;
-}
+
 
