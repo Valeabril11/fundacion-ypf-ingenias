@@ -58,6 +58,9 @@
                         <li class="nav-item mx-2 textCenter">
                             <a class="nav-link" href="./transito.html">Tránsito</a>
                         </li>
+                        <li class="nav-item mx-2 textCenter">
+                            <a class="nav-link" href="./contacto.html">Contacto</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -92,30 +95,37 @@
             </section>
 
             <div class="containerValores">
-                <form>
+                <form id="formularioDonaciones">
                     <fieldset class="form1">
                         <p> Vos podes ayudarnos con tu colaboración </p>
-                        <label for="nombre"> Nombre:</label>
-                        <input type="text" name="nombre" id="nombre">
+                        <label for="nombreDonante"> Nombre:</label>
+                        <input type="text" name="nombreDonante" id="nombreDonante">
                         <p> Seleccione la cantidad y pulse sobre "Donar" </p>
-                        <select name="dinero" id="dinero">
-                            <option value="100$"> 100$ </option>
-                            <option value="200$"> 200$ </option>
-                            <option value="300$"> 300$ </option>
-                            <option value="400$"> 400$ </option>
-                            <option value="500$"> 500$ </option>
-                            <option value="600$"> 600$ </option>
-                            <option value="700$"> 700$ </option>
-                            <option value="800$"> 800$ </option>
-                            <option value="900$"> 900$ </option>
-                            <option value="1000$"> 1000$ </option>
+                        <select name="dinero" id="dineroDonado">
+                            <option value="100"> $100 </option>
+                            <option value="200"> $200 </option>
+                            <option value="300"> $300 </option>
+                            <option value="400"> $400 </option>
+                            <option value="500"> $500 </option>
+                            <option value="600"> $600 </option>
+                            <option value="700"> $700 </option>
+                            <option value="800"> $800 </option>
+                            <option value="900"> $900 </option>
+                            <option value="1000"> $1000 </option>
                         </select>
                         <div class="my-3">
-                            <button type="submit" class="botonCast">Donar</button>
+                            <button type="submit" class="botonCast" id="btnDonar">Donar</button>
                         </div>
                     </fieldset>
                 </form>
             </div>
+            <div class="my-3">
+                <button class="botonCast" id="btnDonantes">Mostrar Donantes</button>
+                <div id="mostrarDonantes" class="ocultar">
+                    <ul id="listaDonantes"></ul>
+                </div>
+            </div>
+
         </div>
     </main>
 
@@ -147,7 +157,7 @@
         </div>
     </footer>
 
-    <script src="../js/main.js"></script>
+    <script src="../js/donacion.js"></script>
     <!-- script js para el nav -bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
         integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"

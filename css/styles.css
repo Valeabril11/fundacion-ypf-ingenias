@@ -76,6 +76,7 @@ h3 {
   height: 250px;
   border-radius: 50%;
   border: 2px dotted;
+  object-fit: contain;
 }
 
 .imgSize:hover {
@@ -834,3 +835,17 @@ ol li {
     padding: 10px;
   }
 }
+
+
+.ocultar{
+  display: none;
+}
+.bg-opcion{
+  background-color:   #cb82ff5d ;
+  border-radius: 10px ;
+}
+
+.bg-formContacto{
+  background-color:  #ffdaaf59;
+}
+
