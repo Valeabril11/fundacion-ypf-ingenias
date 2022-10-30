@@ -74,155 +74,154 @@
                 huellitas, te invito a que completes este formulario</h2>
 
             <section>
-                <div>
-                    <form class="row gy-4 formularioAdopciones mx-auto mt-5 needs-validation">
-                        <div class="col-md-6 col-sm-12">
-                            <label for="nombre" class="form-label">Nombre</label>
-                            <input type="text" class="form-control" id="nombre" required>
-                        </div>
-                        <div class="col-md-6">
-                            <label for="apellido" class="form-label">Apellido</label>
-                            <input type="text" class="form-control" id="apellido" required>
-                        </div>
+                <form class="row gy-4 formularioAdopciones mx-auto mt-5 needs-validation">
+                    <div class="col-md-6 col-sm-12">
+                        <label for="nombre" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="apellido" class="form-label">Apellido</label>
+                        <input type="text" class="form-control" id="apellido" required>
+                    </div>
 
-                        <div class="col-md-6 col-sm-12">
-                            <label for="inputCiudad" class="form-label">Ciudad</label>
-                            <input type="text" class="form-control" id="inputCiudad" required>
-                        </div>
-                        <div class="col-md-6 col-sm-12">
-                            <label for="inputProvincia" class="form-label">Provincia</label>
-                            <input type="text" class="form-control" id="inputProvincia" required>
-                        </div>
-                        <div class="col-md-6">
-                            <label for="inputEmail" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="inputEmail" required>
-                        </div>
-                        <div class="col-md-6">
-                            <label for="telefono" class="form-label">Teléfono</label>
-                            <input type="number" class="form-control" id="telefono" required>
-                        </div>
+                    <div class="col-md-6 col-sm-12">
+                        <label for="inputCiudad" class="form-label">Ciudad</label>
+                        <input type="text" class="form-control" id="inputCiudad" required>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <label for="inputProvincia" class="form-label">Provincia</label>
+                        <input type="text" class="form-control" id="inputProvincia" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputEmail" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="inputEmail" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="telefono" class="form-label">Teléfono</label>
+                        <input type="number" class="form-control" id="telefono" required>
+                    </div>
 
-                        <div class="col-md-12 mb-2" id="infoOpciones">
-                            <label for="opcionHuellitas" class="form-label">Qué deseas hacer?</label>
-                            <select id="opcionHuellitas" class="form-select" required>
+                    <div class="col-md-12 mb-2" id="infoOpciones">
+                        <label for="opcionHuellitas" class="form-label">Qué deseas hacer?</label>
+                        <select id="opcionHuellitas" class="form-select" required>
+                            <option value="">Seleccione una opción</option>
+                            <option value="value1">Adoptar</option>
+                            <option value="value2">Castrar</option>
+                            <option value="value3">Transito</option>
+                            <option value="value4">Obtener mas info</option>
+                        </select>
+                    </div>
+
+                    <!-- div adoptar seleccionado-->
+                    <div id="divAdoptar" class="ocultar bg-opcion row g-0 p-3">
+                        <h3 class="textMayus">Adoptar</h3>
+                        <div class="col-md-6 mb-3">
+                            <label for="tieneMascota" class="form-label">Ya has tenido mascotas?</label>
+                            <select id="tieneMascota" class="form-select">
                                 <option selected>Seleccione una opcion</option>
-                                <option value="value1">Adoptar</option>
-                                <option value="value2">Castrar</option>
-                                <option value="value3">Transito</option>
-                                <option value="value4">Obtener mas info</option>
+                                <option value="value1">Si</option>
+                                <option value="value2">No</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="mascotas" class="form-label">Hay otros animales en la casa?</label>
+                            <select id="mascotas" class="form-select">
+                                <option selected>Seleccione una opcion</option>
+                                <option value="value1">Si</option>
+                                <option value="value2">No</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="mascotaVacuna" class="form-label">En caso que los haya, ¿están
+                                vacunados?</label>
+                            <select id="mascotaVacuna" class="form-select">
+                                <option selected>Seleccione una opcion</option>
+                                <option value="value1">Si</option>
+                                <option value="value2">No</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="mascotaCastrada" class="form-label">Están castrados?</label>
+                            <select id="mascotaCastrada" class="form-select">
+                                <option selected>Seleccione una opcion</option>
+                                <option value="value1">Si</option>
+                                <option value="value2">No</option>
                             </select>
                         </div>
 
-                        <!-- div adoptar seleccionado-->
-                        <div id="divAdoptar" class="ocultar bg-opcion row g-0 p-3">
-                            <h3 class="textMayus">Adoptar</h3>
-                            <div class="col-md-6 mb-3">
-                                <label for="tieneMascota" class="form-label">Ya has tenido mascotas?</label>
-                                <select id="tieneMascota" class="form-select" required>
-                                    <option selected>Seleccione una opcion</option>
-                                    <option value="value1">Si</option>
-                                    <option value="value2">No</option>
-                                </select>
-                            </div>
-                            <div class="col-md-6 mb-3">
-                                <label for="mascotas" class="form-label">Hay otros animales en la casa?</label>
-                                <select id="mascotas" class="form-select" required>
-                                    <option selected>Seleccione una opcion</option>
-                                    <option value="value1">Si</option>
-                                    <option value="value2">No</option>
-                                </select>
-                            </div>
-                            <div class="col-md-6 mb-3">
-                                <label for="mascotasVacuna" class="form-label">En caso que los haya, ¿están
-                                    vacunados?</label>
-                                <select id="mascotasVacuna" class="form-select" required>
-                                    <option selected>Seleccione una opcion</option>
-                                    <option value="value1">Si</option>
-                                    <option value="value2">No</option>
-                                </select>
-                            </div>
-                            <div class="col-md-6 mb-3">
-                                <label for="mascotasVacuna" class="form-label">Están castrados?</label>
-                                <select id="mascotasVacuna" class="form-select" required>
-                                    <option selected>Seleccione una opcion</option>
-                                    <option value="value1">Si</option>
-                                    <option value="value2">No</option>
-                                </select>
-                            </div>
-
-                            <div class="col-md-12 mb-3">
-                                <label for="mascotasGastos" class="form-label">Conoces los gastos y cuidados que
-                                    implicará
-                                    incorporar
-                                    un animal, puedes mantenerlo y estar dispuesto a asumirlos?</label>
-                                <select id="mascotasGastos" class="form-select" required>
-                                    <option selected>Seleccione una opcion</option>
-                                    <option value="value1">Si</option>
-                                    <option value="value2">No</option>
-                                </select>
-                            </div>
-
-                            <div class="col-md-12 mb-3">
-                                <label for="nombreMascotaPerro" class="form-label">Nombre del amiguito que se robó tu
-                                    corazón</label>
-                                <input type="text" class="form-control" id="nombreMascotaPerro" required>
-                            </div>
+                        <div class="col-md-12 mb-3">
+                            <label for="mascotaGastos" class="form-label">Conoces los gastos y cuidados que
+                                implicará
+                                incorporar
+                                un animal, puedes mantenerlo y estar dispuesto a asumirlos?</label>
+                            <select id="mascotaGastos" class="form-select">
+                                <option selected>Seleccione una opcion</option>
+                                <option value="value1">Si</option>
+                                <option value="value2">No</option>
+                            </select>
                         </div>
 
-                        <!-- div castrar seleccionado-->
-                        <div id="divCastrar" class="ocultar bg-opcion row g-0 p-3">
-                            <h3 class="textMayus">Castrar</h3>
-                            <div class="col-md-12 mb-3">
-                                <p>A partir de los 6 meses ya se puede castrar a tu mascota</p>
-                                <label for="castracion" class="form-label">Necesitas que nos encarguemos nosotros de la
-                                    castración? De ser así, nos pondremos en contacto contigo</label>
-                                <select id="castracion" class="form-select" required>
-                                    <option selected>Seleccione una opcion</option>
-                                    <option value="value1">Si</option>
-                                    <option value="value2">No</option>
-                                </select>
-                            </div>
+                        <div class="col-md-12 mb-3">
+                            <label for="nombreMascota" class="form-label">Nombre del amiguito que se robó tu
+                                corazón</label>
+                            <input type="text" class="form-control" id="nombreMascota">
                         </div>
-                        <!-- div transito seleccionado-->
-                        <div id="divTransito" class="ocultar bg-opcion g-0 p-3">
-                            <h3 class="textMayus">Tránsito</h3>
-                            <div class="col-md-12 mb-3">
-                                <p class=" mb-3 p-0">Deseas colaborar con un espacio para
-                                    transitar,
-                                    o necesitas de un tránsito.
-                                </p>
-                                <div class="d-flex justify-content-md-evenly flex-wrap">
-                                    <div class="mb-3 d-flex justify-content-sm-between ">
-                                        <input id="ofrecerTransito" class="form-check-input mx-2" type="checkbox"
-                                            value="value1" aria-label="Checkbox for following text input">
-                                        <label for="check1">Ofrezco tránsito</label>
+                    </div>
 
-                                    </div>
+                    <!-- div castrar seleccionado-->
+                    <div id="divCastrar" class="ocultar bg-opcion row g-0 p-3">
+                        <h3 class="textMayus">Castrar</h3>
+                        <div class="col-md-12 mb-3">
+                            <p>A partir de los 6 meses ya se puede castrar a tu mascota</p>
+                            <label for="castracion" class="form-label">Necesitas que nos encarguemos nosotros de la
+                                castración? De ser así, nos pondremos en contacto contigo</label>
+                            <select id="castracion" class="form-select">
+                                <option selected>Seleccione una opcion</option>
+                                <option value="value1">Si</option>
+                                <option value="value2">No</option>
+                            </select>
+                        </div>
+                    </div>
+                    <!-- div transito seleccionado-->
+                    <div id="divTransito" class="ocultar bg-opcion g-0 p-3">
+                        <h3 class="textMayus">Tránsito</h3>
+                        <div class="col-md-12 mb-3">
+                            <p class=" mb-3 p-0">Deseas colaborar con un espacio para
+                                transitar,
+                                o necesitas de un tránsito.
+                            </p>
+                            <div class="d-flex justify-content-md-evenly flex-wrap">
+                                <div class="mb-3 d-flex justify-content-sm-between ">
+                                    <input id="ofrecerTransito" class="form-check-input mx-2" type="checkbox"
+                                        value="value1" aria-label="Checkbox for following text input">
+                                    <label for="check1">Ofrezco tránsito</label>
 
-                                    <div class="mb-3 d-flex justify-content-sm-between">
-                                        <input id="necesitarTransito" class="form-check-input mx-2" type="checkbox"
-                                            value="value2" aria-label="Checkbox for following text input">
-                                        <label for="check2">Necesito tránsito</label>
+                                </div>
 
-                                    </div>
+                                <div class="mb-3 d-flex justify-content-sm-between">
+                                    <input id="necesitarTransito" class="form-check-input mx-2" type="checkbox"
+                                        value="value2" aria-label="Checkbox for following text input">
+                                    <label for="check2">Necesito tránsito</label>
+
                                 </div>
                             </div>
                         </div>
-                        <!-- div mas info seleccionado-->
-                        <div id="divInfo" class="ocultar bg-opcion row g-0 p-3">
-                            <h3 class="textMayus">Más información</h3>
-                            <div class="col-md-12 mb-3">
-                                <p>Déjanos en comentarios sobre que información quieres que te compartamos y pronto
-                                    recibirás una respuesta</p>
-                                <textarea class="form-control col-md-12" placeholder="Comentario" name="masInfo"
-                                    id="masInfo" cols="30" rows="10" required></textarea>
-                            </div>
+                    </div>
+                    <!-- div mas info seleccionado-->
+                    <div id="divInfo" class="ocultar bg-opcion row g-0 p-3">
+                        <h3 class="textMayus">Más información</h3>
+                        <div class="col-md-12 mb-3">
+                            <p>Déjanos en comentarios sobre que información quieres que te compartamos y pronto
+                                recibirás una respuesta</p>
+                            <textarea class="form-control col-md-12" placeholder="Comentario" name="masInfo"
+                                id="masInfo" cols="30" rows="10"></textarea>
                         </div>
+                    </div>
 
-                        <div class="col-12 text-center">
-                            <button type="submit" class="botonCast" id="enviarFormulario">Enviar formulario</button>
-                        </div>
-                    </form>
+                    <div class="col-12 text-center">
+                        <button type="submit" class="botonCast" id="enviarFormulario">Enviar formulario</button>
+                    </div>
+                </form>
             </section>
         </div>
     </main>

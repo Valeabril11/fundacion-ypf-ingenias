@@ -61,9 +61,3 @@ transitoN.addEventListener('click', () => {
     }
 })
 
-//validar que todos los campos esten completos y luego permitir enviar el form
-let enviarFormulario = document.getElementById('enviarFormulario')
-
-enviarFormulario.addEventListener('click', (e) => {
-    e.preventDefault()
-})
