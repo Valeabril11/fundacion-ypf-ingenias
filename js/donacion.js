@@ -24,8 +24,8 @@ const almacenarStorage = (arrayStorage, cliente) => {
     setLocalStorage(arrayStorage);
     //luego de guardar la info, limpiamos el input para un nuevo nombre
     inputDonarNombre.value = '';
+    mostrarBtnAct(arrayStorage)
 
-    mostrarNombres(arrayStorage)
 }
 
 function donar(e) {
@@ -34,6 +34,7 @@ function donar(e) {
         let cliente = { nombre: inputDonarNombre.value, donacion: inputDonarValor.value };
         let existenDatos = tieneDatosStorage(donantesLocalStorage);
         //si existe ya el array en storage, guarda el nuevo cliente sobre ese array existente, de no existir, manda el array donaciones con el cliente
+
         existenDatos ? almacenarStorage(donantesLocalStorage, cliente) : almacenarStorage(donaciones, cliente);
 
     }
@@ -45,24 +46,58 @@ function setLocalStorage(array) {
 
 let mostrarDonantes = document.getElementById('mostrarDonantes')
 let listaDonantes = document.getElementById('listaDonantes')
+let h3 = document.getElementById('textLocal')
+let actualizarBtn = document.getElementById('actualizarBtn')
 
-
-function mostrarNombres(arrayStorage) {
-    for (const donante of arrayStorage) {
-        let li = document.createElement('li')
-        li.innerHTML = donante.nombre
-        listaDonantes.appendChild(li)
+//si existen datos, cambia el texto del h3 y muestra el botón para actualizar la lista
+function mostrarBtnAct(existenDatos) {
+    if (existenDatos) {
+        h3.textContent = 'Hay donantes'
+        actualizarBtn.classList.remove('ocultar')
     }
 }
 
-////nuevo boton agregado para mostrar la lista de nombres
-let btnDonantes = document.getElementById('btnDonantes')
-btnDonantes.addEventListener('click', mostrarContenido)
 
 function mostrarContenido() {
-    mostrarDonantes.classList.toggle('ocultar')
-    let hayCliente = tieneDatosStorage(donantesLocalStorage)
-    hayCliente ? mostrarNombres(donantesLocalStorage) : null
+    let existenDatos = tieneDatosStorage(donantesLocalStorage);
+    existenDatos ? mostrarNombres() : null
 }
+//si existen datos mostrarlos en la pagina
+mostrarContenido()
+
+function mostrarNombres() {
+    let existenDatos = tieneDatosStorage(donantesLocalStorage);
+    mostrarDonantes.classList.remove('ocultar')
+    mostrarBtnAct(existenDatos)
+    if (existenDatos) {
+        for (const donante of donantesLocalStorage) {
+            let li = document.createElement('li')
+            li.classList.add('listaLi')
+            li.innerHTML = donante.nombre
+            listaDonantes.appendChild(li)
+        }
+    } else {
+        for (const donante of donaciones) {
+            let li = document.createElement('li')
+            li.classList.add('listaLi')
+            li.innerHTML = donante.nombre
+            listaDonantes.appendChild(li)
+        }
+    }
+
+}
+//agrego los li(linea 75-76) con una clase para despues poder borrarla llamando a esa clase y no a todos los li, pq me borra los li del menu
+//de ese modo, llamo a los li con su clase
+function removeChildrens() {
+    let lista = document.querySelectorAll('li.listaLi');
+    for (let i = 0; li = lista[i]; i++) {
+        li.parentNode.removeChild(li);
+    }
+}
+
+actualizarBtn.addEventListener('click', () => {
+    removeChildrens()
+    mostrarNombres()
+})
 
 

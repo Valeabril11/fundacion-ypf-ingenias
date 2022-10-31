@@ -99,9 +99,9 @@
                     <fieldset class="form1">
                         <p> Vos podes ayudarnos con tu colaboración </p>
                         <label for="nombreDonante"> Nombre:</label>
-                        <input type="text" name="nombreDonante" id="nombreDonante">
-                        <p> Seleccione la cantidad y pulse sobre "Donar" </p>
-                        <select name="dinero" id="dineroDonado">
+                        <input type="text" name="nombreDonante" id="nombreDonante" pattern="^[a-zA-Z\s]+{2,254}">
+                        <p class="my-2"> Seleccione la cantidad y pulse sobre "Donar" </p>
+                        <select name="dinero" id="dineroDonado" class="p-2 m-2">
                             <option value="100"> $100 </option>
                             <option value="200"> $200 </option>
                             <option value="300"> $300 </option>
@@ -119,14 +119,15 @@
                     </fieldset>
                 </form>
             </div>
-            <div class="my-3">
-                <button class="botonCast" id="btnDonantes">Mostrar Donantes</button>
+            <div class="my-3 p-3">
+                <div class="d-flex justify-content-start flex-wrap">
+                    <h3 id="textLocal" class="mx-2">No hay donaciones</h3>
+                    <button class="botonCast ocultar mx-2" id="actualizarBtn">Mostrar/Actualizar</button>
+                </div>
                 <div id="mostrarDonantes" class="ocultar">
                     <ul id="listaDonantes"></ul>
                 </div>
             </div>
-
-        </div>
     </main>
 
     <footer class="footer">
@@ -137,6 +138,7 @@
                 <a href="./donacion.html"> Donaciones </a>
                 <a href="./castraciones.html"> Castraciones </a>
                 <a href="./transito.html"> Tránsito </a>
+                <a href="./contacto.html"> Contacto </a>
             </div>
             <div class="footerIcon">
                 <div>
