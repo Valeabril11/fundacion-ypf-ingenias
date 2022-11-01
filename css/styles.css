@@ -229,12 +229,14 @@ h3 {
 }
 
 .contenedor {
+  display: none; 
   height: 200px;
   width: 200px;
   perspective: 1000px;
   margin: 170px auto;
-  transform: scale(0.9) rotateX(-10deg);
-  transform-style: preserve-3d;
+  transform:scale(.9)rotateX(-10deg);
+  transform-style: preserve-3d; 
+
 }
 
 .contenedor .box {
@@ -634,7 +636,7 @@ ol li {
 .transitar .parrafo {
   background-color: #f6e7f2;
   font-size: x-large;
-  animation-duration: 6s;
+  animation-duration: 3s;
   animation-name: slidein;
   text-align: center;
 }

@@ -37,17 +37,8 @@
                         <li class="nav-item mx-2 textCenter">
                             <a class="nav-link" aria-current="page" href="../index.html">Home</a>
                         </li>
-                        <li class="nav-item dropdown mx-2 textCenter">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Adopciones
-                            </a>
-                            <ul class="dropdown-menu mx-2">
-                                <li class="textCenter"><a class="dropdown-item" href="./adopcion.html">Adoptar salva
-                                        vidas!</a></li>
-                                <li class="textCenter"><a class="dropdown-item" href="./perritos.html">Perritos</a></li>
-                                <li class="textCenter"><a class="dropdown-item" href="./gatitos.html">Gatitos</a></li>
-                            </ul>
+                        <li class="nav-item mx-2 textCenter">
+                            <a class="nav-link" href="./adopcion.html">Adopción</a>
                         </li>
                         <li class="nav-item mx-2 textCenter">
                             <a class="nav-link" href="./castraciones.html">Castraciones</a>
@@ -99,7 +90,7 @@
                     <fieldset class="form1">
                         <p> Vos podes ayudarnos con tu colaboración </p>
                         <label for="nombreDonante"> Nombre:</label>
-                        <input type="text" name="nombreDonante" id="nombreDonante" pattern="^[a-zA-Z\s]+{2,254}">
+                        <input type="text" name="nombreDonante" id="nombreDonante">
                         <p class="my-2"> Seleccione la cantidad y pulse sobre "Donar" </p>
                         <select name="dinero" id="dineroDonado" class="p-2 m-2">
                             <option value="100"> $100 </option>
@@ -119,7 +110,7 @@
                     </fieldset>
                 </form>
             </div>
-            <div class="my-3 p-3">
+            <div class="my-1 p-3">
                 <div class="d-flex justify-content-start flex-wrap">
                     <h3 id="textLocal" class="mx-2">No hay donaciones</h3>
                     <button class="botonCast ocultar mx-2" id="actualizarBtn">Mostrar/Actualizar</button>

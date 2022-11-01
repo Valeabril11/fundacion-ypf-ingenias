@@ -40,7 +40,6 @@ inputOpcionHuellitas.addEventListener('change', (e) => {
             divCastrar.classList.add('ocultar')
             divTransito.classList.add('ocultar')
             divInfo.classList.add('ocultar')
-                ;
             break;
     }
 
