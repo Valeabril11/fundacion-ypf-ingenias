@@ -17,3 +17,4 @@ function cambiar() {
 document.getAnimations("btnTexto").dblclick = function () {
     cambiar();
 }
+

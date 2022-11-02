@@ -90,32 +90,22 @@
                 Argentina <a href="https://www.argentina.gob.ar/salud/protenencia/castraciones" target="_blank">acá</a>
             </p>
 
-            <div>
-                <h2 class="tituloSecundario">Quiero castrar!</h2>
-                <div class="quieroCastrar">
-                    <button class="botCast1">Mi perrito</button>
-                    <button class="botCast1">Mi gatito</button>
-                    <button class="botCast1">Hacer traslado</button>
-                </div>
-            </div>
-
             <div class="my-5">
                 <h2 class="tituloSecundario">Querés saber donde esta el móvil veterinario?</h2>
             </div>
             <div class="footerDerecha">
-                <h4>Selecciona tu provincia</h4>
-                <input type="text" value="Soy de "></input>
-
-                <div class="iframee my-3">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13658159.34282947!2d-70.59365710866736!3d-33.305439220242384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1663371717499!5m2!1ses-419!2sar"
-                        width="650" height="350" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade" class="iframe"> </iframe>
+                <div class="row form-group">
+                    <label class="col-form-label col-md-4">Indica tu provincia: </label>
+                    <div class="col-md-6">
+                        <input type="text" name="direccionEditar" id="direccionEditar" class="form-control">
+                    </div>
+                    <!-- abre en otra pestaña la búsqueda -->
+                    <a id="btnConsultar" type="button" class="btn botonCast my-2"
+                        href="https://www.google.com/maps/preview" target="_blank">Consultar</a>
                 </div>
             </div>
         </div>
     </main>
-
 
 
     <footer class="footer">
@@ -155,6 +145,7 @@
         integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
         crossorigin="anonymous"></script>
 
+    <script src="../js/castraciones.js"></script>
 </body>
 
 </html>
