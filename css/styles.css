@@ -26,6 +26,20 @@
   weight --> 100 300 400 700 
 */
 
+.divSpinner{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.spinnerImg{
+  width: 300px;
+  border-radius: 50%;
+  padding: 20px;
+}
+
 /*-------------------MENU INICIO----------------------*/
 
 /* realizo la clase active para que quede activo la seccion del menu donde me encuentro parado */
