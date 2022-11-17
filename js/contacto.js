@@ -1,4 +1,3 @@
-////formulario parte - adoptar
 let inputOpcionHuellitas = document.getElementById('opcionHuellitas')
 
 let divAdoptar = document.getElementById('divAdoptar')
@@ -9,7 +8,6 @@ let divInfo = document.getElementById('divInfo')
 
 inputOpcionHuellitas.addEventListener('change', (e) => {
     e.preventDefault()
-    console.log(inputOpcionHuellitas.value)
     switch (inputOpcionHuellitas.value) {
         case ('value1'):
             divAdoptar.classList.remove('ocultar')

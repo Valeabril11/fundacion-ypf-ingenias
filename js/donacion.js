@@ -29,7 +29,6 @@ const almacenarStorage = (arrayStorage, cliente) => {
 }
 
 function donar(e) {
-    e.preventDefault();
     if (inputDonarNombre.value != '') {
         let cliente = { nombre: inputDonarNombre.value, donacion: inputDonarValor.value };
         let existenDatos = tieneDatosStorage(donantesLocalStorage);
@@ -39,6 +38,7 @@ function donar(e) {
 
     }
 }
+
 
 function setLocalStorage(array) {
     localStorage.setItem('Donaciones', JSON.stringify(array));
