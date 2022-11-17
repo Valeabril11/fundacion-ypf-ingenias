@@ -521,77 +521,35 @@ ol li {
   color: #b971ed;
 }
 
-.muestras {
+.mostrarAnimales {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
-  padding: 25px;
+  padding: 10px;
 }
 
 .fotos {
   box-shadow: 0px 10px 10px -6px blueviolet;
   border: 5px solid rgba(220, 114, 221, 0.952);
   border-radius: 20px;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  -o-border-radius: 20px;
+  max-width: 300px;
+  background-color:  #f6e7f2 ;
 }
 
 .fotos .imagen {
   border-radius: 15px;
   height: 250px;
-  background-size: cover;
-  background-position-x: center;
-  -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
-  -ms-border-radius: 15px;
-  -o-border-radius: 15px;
+  width: 100%;
+  padding: 10px;
 }
 
-.img1 {
-  background-image: url("https://cdn.pixabay.com/photo/2015/02/21/10/39/dog-644111_960_720.jpg");
-}
-
-.img2 {
-  background-image: url("https://cdn.pixabay.com/photo/2021/11/26/02/39/dog-6824999_960_720.jpg");
-}
-
-.img3 {
-  background-image: url("https://cdn.pixabay.com/photo/2020/12/21/08/36/dog-5849152_960_720.jpg");
-}
-
-.img4 {
-  background-image: url("https://cdn.pixabay.com/photo/2019/02/06/15/18/puppy-3979350_960_720.jpg");
-}
-
-.img5 {
-  background-image: url("https://cdn.pixabay.com/photo/2019/04/08/20/38/animal-4112950_960_720.jpg");
-}
-
-.img6 {
-  background-image: url("https://cdn.pixabay.com/photo/2013/09/03/23/30/animals-178808_960_720.jpg");
-}
-
-.img7 {
-  background-image: url("https://cdn.pixabay.com/photo/2014/11/30/14/11/cat-551554_960_720.jpg");
-}
-
-.img8 {
-  background-image: url("https://cdn.pixabay.com/photo/2017/08/23/08/33/cats-eyes-2671903_960_720.jpg");
-}
-
-.img9 {
-  background-image: url("https://cdn.pixabay.com/photo/2014/06/03/01/31/cat-360807_960_720.jpg");
-}
-
-.fotos {
-  width: 25%;
+.textoCard{
+  height: 200px;
 }
 
 .nombre {
-  color: blue;
+  color: #CA82FF;
   text-align: center;
   font-size: x-large;
   font-weight: bolder;
@@ -636,17 +594,10 @@ ol li {
   }
 }
 
-.formulario {
-  text-align: center;
-  color: darkviolet;
-  font-size: medium;
-}
-
 .publicidad {
   display: flex;
   flex-wrap: nowrap;
   margin: 25px 0;
-  padding: 15px;
   gap: 4px;
   width: 100%;
 }
@@ -734,6 +685,7 @@ ol li {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 15px;
   }
 
   .imagePublicidad {
@@ -804,16 +756,6 @@ ol li {
   .imgSizeDonacion {
     width: 180px;
     height: 180px;
-  }
-
-  /* TRANSITO */
-  .muestras {
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .fotos {
-    width: 100%;
   }
 
   /* FOOTER */

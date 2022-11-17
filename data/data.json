@@ -1,0 +1,56 @@
+[
+    {
+        "id":1,
+        "nombre":"Gaspar",
+        "descripcion": "Macho, tamaño mediano sin castrar. Temperamento dócil y juguetón. Tiene aproximadamente 5 años de edad. Se lleva bien con niños y con gatos.",
+        "imagen": "https://cdn.pixabay.com/photo/2015/02/21/10/39/dog-644111_960_720.jpg"
+    },
+    {
+        "id":2,
+        "nombre":"Pepo",
+        "descripcion": "Pepo es un un perrito macho chiquito, al que le gusta pasear y correr. Aunque no le gustan otros gatos, puede convivir con niños tranquilamente. Es un perro adulto y muy tranquilo.",
+        "imagen": "https://cdn.pixabay.com/photo/2021/11/26/02/39/dog-6824999_960_720.jpg"
+    },
+
+    {
+        "id":3,
+        "nombre":"Chiqui",
+        "descripcion": "Hembra, cachorra de 4 meses de edad. Busca una familia que la ame para siempre. Le encantan los chicos, una pelota, saltar y correr. También le gusta romper toda cosa que encuentra, como a todo cachorrito. Ya está desparacitada.",
+        "imagen": "https://cdn.pixabay.com/photo/2020/12/21/08/36/dog-5849152_960_720.jpg"
+    },
+    {
+        "id":4,
+        "nombre":"Serú",
+        "descripcion": "Super activo, le gustan los paseos y estar acompañado todo el tiempo. Macho de 3 años de edad. Vacunas al día. No se lleva con gatos.",
+        "imagen": "https://cdn.pixabay.com/photo/2019/02/06/15/18/puppy-3979350_960_720.jpg"
+    },
+    {
+        "id":5,
+        "nombre":"Peter",
+        "descripcion": "Este amiguito es un macho de 2 años. Todavia es algo cachorrón, así que es bastante activo. No le gustan las tormentas, tiende a escaparse del susto a los ruidos fuertes. Se necesita un lugar bien cerrado.",
+        "imagen": "https://cdn.pixabay.com/photo/2019/04/08/20/38/animal-4112950_960_720.jpg"
+    },{
+        "id":6,
+        "nombre":"Lola",
+        "descripcion": "Esta miniatura de nombre Lola, tiene 50 días de edad. Va a ser de tamaño mini. Ya comenzó con su plan de vacunación. Es un amor de perrita.",
+        "imagen": "https://cdn.pixabay.com/photo/2013/09/03/23/30/animals-178808_960_720.jpg"
+    },
+    {
+        "id":7,
+        "nombre":"Osiris",
+        "descripcion": "Gatito bebé de 3 meses de edad, busca tránsito o adopción definitiva. Ya comenzó a utilizar las piedritas. plan de vacunación al día.",
+        "imagen": "https://cdn.pixabay.com/photo/2014/11/30/14/11/cat-551554_960_720.jpg"
+    },
+    {
+        "id":8,
+        "nombre":"Praga",
+        "descripcion": "Bellísima Praga. Gata adulta, castrada. Muy mimosa y compañera. Ideal persona mayor.",
+        "imagen": "https://cdn.pixabay.com/photo/2017/08/23/08/33/cats-eyes-2671903_960_720.jpg"
+    },
+    {
+        "id":9,
+        "nombre":"Fígaro",
+        "descripcion": "Su nombre se debe a lo excelente cantante que es éste gatito. Le gusta maullar hasta que le hagan caricias. Macho adulto, super cariñoso.",
+        "imagen": "https://cdn.pixabay.com/photo/2014/06/03/01/31/cat-360807_960_720.jpg"
+    }
+]
