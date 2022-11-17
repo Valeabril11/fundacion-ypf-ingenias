@@ -154,7 +154,7 @@ h3 {
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  background-color: #ffcd8f83;
+  background-color: #FFDAAF ;
   padding: 10px;
 }
 
@@ -390,7 +390,7 @@ ol {
 ol li {
   display: flex;
   flex-wrap: wrap;
-  background-color: #ffcd8f83;
+  background-color: #FFDAAF ;
   padding: 15px;
 }
 

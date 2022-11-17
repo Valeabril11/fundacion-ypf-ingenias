@@ -86,28 +86,28 @@
             </section>
 
             <div class="containerValores">
-                <form id="formularioDonaciones">
-                    <fieldset class="form1">
-                        <p> Vos podes ayudarnos con tu colaboración </p>
-                        <label for="nombreDonante"> Nombre:</label>
-                        <input type="text" name="nombreDonante" id="nombreDonante">
-                        <p class="my-2"> Seleccione la cantidad y pulse sobre "Donar" </p>
-                        <select name="dinero" id="dineroDonado" class="p-2 m-2">
-                            <option value="100"> $100 </option>
-                            <option value="200"> $200 </option>
-                            <option value="300"> $300 </option>
-                            <option value="400"> $400 </option>
-                            <option value="500"> $500 </option>
-                            <option value="600"> $600 </option>
-                            <option value="700"> $700 </option>
-                            <option value="800"> $800 </option>
-                            <option value="900"> $900 </option>
-                            <option value="1000"> $1000 </option>
-                        </select>
-                        <div class="my-3">
-                            <button type="submit" class="botonCast" id="btnDonar">Donar</button>
-                        </div>
-                    </fieldset>
+                <form id="formularioDonaciones" class="form1 needs-validation">
+                    <p> Vos podes ayudarnos con tu colaboración </p>
+                    <label for="nombreDonante">Nombre</label>
+                    <input type="text" id="nombreDonante" name="nombreDonante" required>
+                    <span id="setName" class="ocultar">Ingresa nombre</span>
+
+                    <p class="my-2"> Seleccione la cantidad y pulse sobre "Donar" </p>
+                    <select name="dinero" id="dineroDonado" class="p-2 m-2">
+                        <option value="100"> $100 </option>
+                        <option value="200"> $200 </option>
+                        <option value="300"> $300 </option>
+                        <option value="400"> $400 </option>
+                        <option value="500"> $500 </option>
+                        <option value="600"> $600 </option>
+                        <option value="700"> $700 </option>
+                        <option value="800"> $800 </option>
+                        <option value="900"> $900 </option>
+                        <option value="1000"> $1000 </option>
+                    </select>
+                    <div class="my-3">
+                        <button type="submit" class="botonCast" id="btnDonar">Donar</button>
+                    </div>
                 </form>
             </div>
             <div class="my-1 p-3">
