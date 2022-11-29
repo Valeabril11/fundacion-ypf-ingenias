@@ -440,11 +440,11 @@ h3 {
   flex-wrap: wrap;
   justify-content: center;
   gap: 80px;
-  padding: 50px;
+  padding: 20px;
 }
 /* agregar */
-.textCast{
-  height: auto;
+.textoCast{
+  height: 350px;
 }
 
 .motivoCast {
@@ -465,7 +465,34 @@ h3 {
 .masInfo{
   background-color: #5f00d3;
 }
-
+.fotosC{
+  box-shadow: 0px 10px 10px -6px blueviolet;
+  border: 2px solid rgba(220, 114, 221, 0.952);
+  border-radius: 20px;
+  max-width: 350px;
+  background-color:  #f6e7f2 ;
+}
+.linkCast{
+  background: #7b56a885;
+  color: #000000  ;
+  transition: background ease-in .3s;
+  transition: color ease-in .3s;
+}
+.linkCast:hover {
+  background:  rgba(92, 16, 94, 0.952);
+  color: white;
+}
+.linkCast-1{
+  text-align: center;                               
+  background: #7b56a885;
+  color: #000000  ;
+  transition: background ease-in .3s;
+  transition: color ease-in .3s;
+}
+.linkCast-1:hover {
+  background:  rgba(92, 16, 94, 0.952);
+  color: white;
+}
 /*-------------------- CASTRACIONES FIN------------------------*/
 /*-------------------- DONACION INICIO --------------------------------*/
 .botonCast {
@@ -484,6 +511,7 @@ h3 {
 
 .textCenter {
   text-align: center;
+  
 }
 .tituloSecundario {
   color: #ca82ff;

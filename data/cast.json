@@ -8,25 +8,25 @@
     {
         "id":2,
         "nombre":"Mejor comportamiento",
-        "descripcion": "Los perros esterilizados son menos agresivos y tienen menos conductas no deseadas.",
+        "descripcion": "Los perros esterilizados son menos agresivos y tienen menos conductas no deseadas, no montaran personas u objetos, ya que no tenmdran el deseo.",
         "imagen": "https://cdn.pixabay.com/photo/2017/12/27/14/02/friends-3042751_960_720.jpg"
     },
     {
         "id":3,
         "nombre":"Reduce problemas psicológicos en las perras",
-        "descripcion": "derivados del celo y de no quedarse preñada, como las pseudogestaciones o la adopción de objetos como si fueran sus cachorros. Estas conductas producen en la hembra un sufrimiento innecesario..",
+        "descripcion": "derivados del celo y de no quedarse preñada, como las pseudogestaciones o la adopción de objetos como si fueran sus cachorros. Estas conductas producen en la hembra un sufrimiento innecesario.",
         "imagen": "https://cdn.pixabay.com/photo/2016/11/26/23/45/dog-1861839_960_720.jpg"
     },
     {
         "id":4,
         "nombre":"Bajan las probabilidades de que se pierda o extravíe",
-        "descripcion": "Pues la esterilización evita que el perro siga el rastro dejado por las hembras en celo y que vagabundee en busca de pareja..",
+        "descripcion": "Pues la esterilización evita que el perro siga el rastro dejado por las hembras en celo y que vagabundee en busca de pareja ¡Vamos a poder dejarlo pasear tyranquilo!",
         "imagen": "https://cdn.pixabay.com/photo/2017/06/20/22/14/man-2425121_960_720.jpg"
     },
     {
         "id":5,
         "nombre":"Mito uno! la mascota engorda",
-        "descripcion": "La esterilización no engordará a su mascota.",
+        "descripcion": "La esterilización no engordará a su mascota, si va a tener mas apetito, pero debemos cuidarnos con la cantidad de alimento que le damos, esto siempre, este o no, esterilizado, la cantridad de alimento que se sugiere dar depende de su peso y edad.",
         "imagen": "https://cdn.pixabay.com/photo/2017/11/09/21/41/cat-2934720_960_720.jpg"
     },
     {

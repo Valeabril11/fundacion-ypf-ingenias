@@ -21,7 +21,7 @@ const showCharacters = (huellitaJson) => {
     let div = document.getElementById("castracion");
     for (const huellita of huellitaJson) {
         let div2 = document.createElement("div");
-        div2.innerHTML = `<article class="fotos">
+        div2.innerHTML = `<article class="fotosC">
                             <img src="${huellita.imagen}" alt="${huellita.id}, ${huellita.nombre}" class="imagenCast">
                             <div class="textoCast">
                                 <div class="motivoCast">${huellita.nombre}</div>
