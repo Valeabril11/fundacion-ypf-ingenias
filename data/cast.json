@@ -7,7 +7,7 @@
     },
     {
         "id":2,
-        "nombre":"Mejor comportammiento",
+        "nombre":"Mejor comportamiento",
         "descripcion": "Los perros esterilizados son menos agresivos y tienen menos conductas no deseadas.",
         "imagen": "https://cdn.pixabay.com/photo/2017/12/27/14/02/friends-3042751_960_720.jpg"
     },
@@ -31,13 +31,13 @@
     },
     {
         "id":6,
-        "nombre":"Mito 2! La hembra debe tenr al menos un embarazo y una camada",
+        "nombre":"Mito 2! La hembra debe tener al menos un embarazo y una camada",
         "descripcion": "No existen estudios que lo corroboren, por lo que, es mejor esterilizarlas incluso antes, sobre todo porque sólo pueden ser esterilizadas tres meses después de que su celo haya finalizado, lo que supone esperar más y un posible riesgo de embarazo.",
         "imagen": "https://cdn.pixabay.com/photo/2018/01/09/11/04/dog-3071334_960_720.jpg"
     },
     {
         "id":7,
-        "nombre":"Mito 3! La recuperacion es lenta",
+        "nombre":"Mito 3! La recuperación es lenta",
         "descripcion": "Solo en el caso de las hembras el procedimiento es mas aparatos porque se extirpan los organos sexuales mediante una incisión en el abdomen pero la recuperacion es de 7 a 10 dias unicamente.",
         "imagen": "https://cdn.pixabay.com/photo/2019/09/14/23/14/dogs-4477058_960_720.jpg"
     },
