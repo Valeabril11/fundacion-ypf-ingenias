@@ -381,18 +381,18 @@ h3 {
 /* ------------------- ADOPCION FIN --------------------------- */
 
 /*-------------------- CASTRACIONES INICIO------------------------*/
-ol {
+/* ol {
   text-align: left;
   margin-left: 50px;
   color: blueviolet;
-}
+} */
 
-ol li {
+/* ol li {
   display: flex;
   flex-wrap: wrap;
   background-color: #FFDAAF ;
   padding: 15px;
-}
+} */
 
 .contenidoFormCastracion {
   background-image: url(../img/images.jpg);
@@ -413,13 +413,57 @@ ol li {
   width: 500px;
 }
 
-.iframee {
-  display: grid;
-  justify-content: right;
-  box-shadow: #000000;
+
+.cast-1{
+  background-color: rgba(205, 194, 207, 0.521);
+  border-radius: 0 20px 0 20px;
+  box-shadow: 5px 5px 10px;
 }
-.iframe {
-  border-radius: 10px;
+.cast-1:hover{
+  background-color: #e4d2d2;
+}
+.imagenCast{
+  border-radius: 0 30px 0 30px;
+  height: 250px;
+  width: 100%;
+  padding: 10px;
+  box-shadow: 2px 2px 10px;
+  
+}
+.imagenCast:hover{
+  background-color: #a760ff69;
+  border-radius: 20px 0  20px;
+}
+
+.motivos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 80px;
+  padding: 50px;
+}
+/* agregar */
+.textCast{
+  height: auto;
+}
+
+.motivoCast {
+  color: #9500ff;
+  text-align: center;
+  font-size: x-large;
+  font-weight: bolder;
+  margin: 10px 10px;
+}
+
+.desCast {
+  color: black;
+  font-size:larger;
+  text-align: center;
+  margin: 10px 10px;
+}
+
+.masInfo{
+  background-color: #5f00d3;
 }
 
 /*-------------------- CASTRACIONES FIN------------------------*/

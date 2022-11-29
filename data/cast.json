@@ -1,0 +1,50 @@
+[
+    {
+        "id":1,
+        "nombre":"¡Mas vida!",
+        "descripcion": "Esterilizar a los perros alarga su esperanza de vida, pues reduce las probabilidades de sufrir numerosas enfermedades, como cáncer de mama o de próstata.",
+        "imagen": "https://cdn.pixabay.com/photo/2018/10/01/09/21/pets-3715733_960_720.jpg"
+    },
+    {
+        "id":2,
+        "nombre":"Mejor comportammiento",
+        "descripcion": "Los perros esterilizados son menos agresivos y tienen menos conductas no deseadas.",
+        "imagen": "https://cdn.pixabay.com/photo/2017/12/27/14/02/friends-3042751_960_720.jpg"
+    },
+    {
+        "id":3,
+        "nombre":"Reduce problemas psicológicos en las perras",
+        "descripcion": "derivados del celo y de no quedarse preñada, como las pseudogestaciones o la adopción de objetos como si fueran sus cachorros. Estas conductas producen en la hembra un sufrimiento innecesario..",
+        "imagen": "https://cdn.pixabay.com/photo/2016/11/26/23/45/dog-1861839_960_720.jpg"
+    },
+    {
+        "id":4,
+        "nombre":"Bajan las probabilidades de que se pierda o extravíe",
+        "descripcion": "Pues la esterilización evita que el perro siga el rastro dejado por las hembras en celo y que vagabundee en busca de pareja..",
+        "imagen": "https://cdn.pixabay.com/photo/2017/06/20/22/14/man-2425121_960_720.jpg"
+    },
+    {
+        "id":5,
+        "nombre":"Mito uno! la mascota engorda",
+        "descripcion": "La esterilización no engordará a su mascota.",
+        "imagen": "https://cdn.pixabay.com/photo/2017/11/09/21/41/cat-2934720_960_720.jpg"
+    },
+    {
+        "id":6,
+        "nombre":"Mito 2! La hembra debe tenr al menos un embarazo y una camada",
+        "descripcion": "No existen estudios que lo corroboren, por lo que, es mejor esterilizarlas incluso antes, sobre todo porque sólo pueden ser esterilizadas tres meses después de que su celo haya finalizado, lo que supone esperar más y un posible riesgo de embarazo.",
+        "imagen": "https://cdn.pixabay.com/photo/2018/01/09/11/04/dog-3071334_960_720.jpg"
+    },
+    {
+        "id":7,
+        "nombre":"Mito 3! La recuperacion es lenta",
+        "descripcion": "Solo en el caso de las hembras el procedimiento es mas aparatos porque se extirpan los organos sexuales mediante una incisión en el abdomen pero la recuperacion es de 7 a 10 dias unicamente.",
+        "imagen": "https://cdn.pixabay.com/photo/2019/09/14/23/14/dogs-4477058_960_720.jpg"
+    },
+    {
+        "id":8,
+        "nombre":"Mito 4! Es doloroso",
+        "descripcion": "El animalito es dormido para el procedimiento que durará entre 30 y 60 minutos, luego debemos llevarlo a casa con cuidado y darle cariño, pero no sentira dolores, solo pequeñas molestias durante las primeras horas.",
+        "imagen": "https://cdn.pixabay.com/photo/2016/03/27/20/51/dogs-1284238_960_720.jpg"
+    }
+]
